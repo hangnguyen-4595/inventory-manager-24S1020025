@@ -33,3 +33,15 @@ def main():
             print("Lựa chọn không hợp lệ, vui lòng thử lại.")
 if __name__ == "__main__":
     main()
+
+## Nhap hang
+# Biến toàn cục
+products = []
+def add_product(name, price, quantity):
+    product = {
+        'name': name,
+        'price': price,
+        'qty': quantity
+    }
+    products.append(product)
+    print(f"Đã thêm sản phẩm: {name} - Giá: {price} - SL: {quantity}")
