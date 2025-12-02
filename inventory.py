@@ -45,3 +45,14 @@ def add_product(name, price, quantity):
     }
     products.append(product)
     print(f"Đã thêm sản phẩm: {name} - Giá: {price} - SL: {quantity}")
+
+## Xem ton kho
+def view_inventory():
+    if not products:
+        print("Kho hiện đang trống.")
+        return
+
+    print("\n--- DANH SÁCH TỒN KHO ---")
+    for item in products:
+        print(f"{item['name']} - Giá: {item['price']} - SL: {item['qty']}")
+
