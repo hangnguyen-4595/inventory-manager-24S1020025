@@ -1,5 +1,5 @@
 # QUẢN LÝ KHO HÀNG - MAIN FILE
-products = []   
+products = []   #Mỗi sản phẩm sau này sẽ là dict
 def add_product():
     print(">> Chức năng nhập hàng (sẽ phát triển ở Feature Branch).")
 
@@ -31,7 +31,5 @@ def main():
             break
         else:
             print("Lựa chọn không hợp lệ, vui lòng thử lại.")
-
-
 if __name__ == "__main__":
     main()
